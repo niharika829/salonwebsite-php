@@ -1,0 +1,283 @@
+*{
+	width: 100%;
+	padding: 0;
+	margin: 0; 
+	text-decoration: none;
+	font-family: 'Gill Sans MT', sans-serif;
+}
+body{
+	width: 100%;
+	padding: 0;
+	overflow-x: hidden;
+	margin: 0;
+}
+#heading{
+
+	width: 100%;
+	height: 150px;
+	background-color: white;
+	color: #00CAE1;
+}
+#logo{
+	padding-left: 60px;
+	width: 150px;
+	height: auto;
+}
+#heading1{
+	width: 20%;
+	height: 150px;
+	float: left;
+}
+#heading3{
+	width: 80%;
+	height: 100px;
+	padding: 25px;
+	text-align: center;
+	font-size: 70px;
+}
+#menu{
+	width: 1309px;
+	height: 20px;
+	padding: 20px;
+	background-color: #43A2E1;
+	position: sticky;
+	top: 0px;
+	opacity: .9;
+	color: black;
+}
+.menucontent{
+	text-align: center;
+	font-size: 20px;
+	padding-left: 30px; 
+	color: black;
+}
+.menucontent:hover{
+	text-align: center;
+	padding:18px;
+	font-size: 20px;
+	color: black;
+	background-color: white;
+	opacity: .5s;
+	transition: all .7s;
+}
+#imagegallery{
+	width: 100%;
+	height: 500px;
+}
+#image3{
+	width: 100%;
+	height: 500px;
+}
+#gallerybutton1{
+	position: absolute;
+	bottom: 200px;
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	opacity: .4;
+	color: white;
+	border: none;
+}
+#gallerybutton1:hover{
+	position: absolute;
+	bottom: 200px;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	color: black;
+}
+#gallerybutton2{
+	position: absolute;
+	bottom: 200px;
+	left: 1308px;
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	opacity: .4;
+	color: white;
+	border: none;
+}
+#gallerybutton2:hover{
+	position: absolute;
+	bottom: 200px;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	color: black;
+}
+#container1{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	color: black;
+	padding-bottom: 30px;
+}
+#p1{
+	width: 50%;
+	float: left;
+	background-color: white;
+	height: auto;
+	color: black;
+	padding-top: 50px;
+}
+#p1 p{
+	font-size: 20px;
+}
+#p2{
+	width: 40%;
+	float: right;
+}
+#p2 img{
+	margin-top: 30px;
+	width: 70%;
+	height: auto;
+}
+#appointmentbox{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	float: left;
+	margin: 20px;
+
+
+}
+#appointmentbox1{
+	padding: 20px;
+	width: 100%;
+}
+#container2{
+	width: 100%;
+	height: 150px;
+	margin-top: 640px;
+	color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url("../Images/A4.jpg");
+}
+#q1, #q2, #q3{
+	width: 20%;
+	float: left;
+	padding-top: 50px;
+	padding-left: 70px;
+}
+#container3{
+	width: 1200px;
+	padding: 30px;
+	background-color: white;
+}
+#container31{
+	width: 100%;
+	padding: 60px;
+	text-align: center;
+}
+#container4{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.grid{
+	width: 100%;
+	background-color: #6ACEE7;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+}
+.grid_img{
+	width: 100%;
+	height: auto;
+	
+}
+.grid_text{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.texthover{
+	color: black;
+	font-size: 30px;
+}
+.texthover:hover{
+	color: #4E92E7;
+	font-size: 30px;
+	transition: all .6s;
+	cursor: pointer;
+}
+#container5{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-image: url("--/Images/astronomy-blue-bright-340901.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+#readmore{
+	color: #00CAE1;
+	border: solid grey;
+	padding: 5px;
+	border-radius: 4px;
+	width: 70px;
+	height: 15px;
+	margin-left: 640px;
+}
+#readmore:hover{
+	color: white;
+	border: solid grey;
+	background-color: #57CEE7;
+	padding: 5px;
+	border-radius: 4px;
+	width: 70px;
+	height: 15px;
+	margin-left: 640px;
+}
+#container6{
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 70px; 
+}
+#container7{
+	display: grid;
+	margin-left: 10%;
+	grid-template-columns: 20% 20% 20% 20%;
+	margin-bottom: 80px;
+}
+.grid1{
+	width: 100%;
+	padding-left: 2.5%; 
+}
+.grid_img1{
+	width: 100%;
+	height: auto;
+}
+.grid_img1:hover{
+	width: 100%;
+	height: auto;
+	opacity: .7;
+}
+#container8{
+	display: grid;
+	grid-template-columns: 23% 23% 23% 23%;
+	padding-left: 4%;
+	background-image: url("--/Images/astronomy-blue-bright-340901.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-bottom: 60px;
+	color: white;
+}
+.grid_icon{
+	padding-left: 70px;
+}
+.grid_icon img{
+	width: 100px;
+	height: auto;
+}

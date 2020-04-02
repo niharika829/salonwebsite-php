@@ -1,0 +1,510 @@
+.heart {
+  color: white;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-name: heartbeat;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(.75);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.75);
+  }
+
+  to {
+    transform: scale(.75);
+  }
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../image/linensfinal.jpg");
+
+  /* Set a specific height */
+  min-height: 550px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for room cards*/
+#cont1 {
+  width: 100px;
+  height: 400px;
+  
+ 
+  background: url("../image/single.jpg");
+ 
+ background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 15px 15px 5px #000;
+        box-shadow: 3px 3px 3px #000;
+  }
+  #cont2{
+  width: 100px;
+  height: 400px;
+  
+ 
+  background: url("../image/double.jpg");
+ 
+ background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 15px 15px 5px #000;
+        box-shadow: 3px 3px 3px #000;
+  }
+#cont3 {
+  width: 100px;
+  height: 400px;
+  
+ 
+  background: url("../image/duplex.jpg");
+ 
+  background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 15px 15px 5px #000;
+        box-shadow: 3px 3px 3px #000;
+  }
+  #cont4{
+  width: 100px;
+  height: 400px;
+  
+ 
+  background: url("../image/underwater.jpg");
+ 
+ background-size: cover;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 15px 15px 5px #000;
+        box-shadow: 3px 3px 3px #000;
+  }
+.overlay {
+  width: 100%;
+  height: 100%;
+  
+   grid-template-columns: 1fr;
+  
+ 
+  
+  background: rgba(77, 77, 77, .9);
+
+  opacity: 0;
+  transition: all 0.5s;
+  text-transform:capitalize;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.head {
+color:white;
+  font-size: 30px;
+  line-height: 40px;
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+ 
+}
+
+.price {
+color:white;
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;  
+  
+  transform: translateY(40px);
+  transition: all 0.7s;
+  .old {
+    text-decoration: line-through;
+    color: white;
+  }
+}
+
+.cart {
+color:white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  i {
+    font-size: 16px;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  & .head {
+    transform: translateY(0px);
+  }
+  
+  & hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+  
+  & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+  & .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+/*background parallax*/
+.parallax_one{
+  /* The image used */
+  background-image: url("../image/para_back.jpg");
+
+  /* Set a specific height */
+  min-height: 400px; 
+margin:5%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax_two{
+  /* The image used */
+  background-image: url("../image/sunset.jpg");
+
+  /* Set a specific height */
+  min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax_three{
+  /* The image used */
+  background-image: url("../image/villa.jpg");
+
+  /* Set a specific height */
+  min-height: 200px; 
+margin:5%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*grid card layout*/
+#second-header {
+  position: relative;
+  height: 10em;
+  grid-row: 1 / 3;
+  grid-column: 2;
+  background: url("../image/honey.jpg");
+  
+  background-size: cover;
+  background-position: right center;
+
+ 
+}
+
+
+header {
+  position: relative;
+  height: 10em;
+  grid-row: 1 / 3;
+  grid-column: 2;
+  background: url("../image/lines-about.jpg");
+  
+  background-size: cover;
+  background-position: right center;
+
+ 
+}
+
+
+main {
+  padding: var(--var-padding);
+  grid-row: 2;
+  grid-column: 1;
+  background: #304056;
+}
+  
+  
+ 
+
+
+
+@media (min-width: 37.5em) {
+  :root {
+    --var-padding: 3em;
+  }
+  
+  
+
+  .app {
+	  padding:60px;
+    display: grid;
+    margin: 3em auto;
+    grid-template-rows: 5em auto;
+    grid-template-columns: 1.4fr 1fr;
+    padding-left: 2em;
+    background-size: auto;
+    
+  width:70%;
+  }
+  
+  header {
+    height: auto;
+    
+   
+  }
+  
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+
+.social {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    background: #e64522;
+}
+
+.social .fa-github:hover {
+    background: #343434;
+}
+
+.social .fa-pinterest:hover {
+    background: #cb2027;
+}
+
+.social .fa-linkedin:hover {
+    background: #0094BC;
+}
+
+.social .fa-flickr:hover {
+    background: #FF57AE;
+}
+
+.social .fa-instagram:hover {
+    background: #375989;
+}
+
+.social .fa-vimeo-square:hover {
+    background: #83DAEB;
+}
+
+.social .fa-stack-overflow:hover {
+    background: #FEA501;
+}
+
+.social .fa-dropbox:hover {
+    background: #017FE5;
+}
+
+.social .fa-tumblr:hover {
+    background: #3a5876;
+}
+
+.social .fa-dribbble:hover {
+    background: #F46899;
+}
+
+.social .fa-skype:hover {
+    background: #00C6FF;
+}
+
+.social .fa-stack-exchange:hover {
+    background: #4D86C9;
+}
+
+.social .fa-youtube:hover {
+    background: #FF1F25;
+}
+
+.social .fa-xing:hover {
+    background: #005C5E;
+}
+
+.social .fa-rss:hover {
+    background: #e88845;
+}
+
+.social .fa-foursquare:hover {
+    background: #09B9E0;
+}
+
+.social .fa-youtube-play:hover {
+    background: #DF192A;
+}
